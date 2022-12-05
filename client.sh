@@ -32,18 +32,6 @@ sed -i 's/EXAMPLE/SD/g' /etc/krb5.conf
 sed -i 's/example/sd/g' /etc/krb5.conf
 sed -i 's/kerberos./cdc./g' /etc/krb5.conf
 
-###### Manipulando /var/kerberos/krb5kdc/kadm5.acl #########
-echo 'atualizando /var/kerberos/krb5kdc/kadm5.acl'
-
-# Substitui configuração com nome do host
-sed -i 's/EXAMPLE/SD/g' /var/kerberos/krb5kdc/kadm5.acl
-
-###### Manipulando /var/kerberos/krb5kdc/kdc.conf ##########
-echo 'atualizando /var/kerberos/krb5kdc/kdc.conf'
-
-# Substitui configuração com nome do host
-sed -i 's/EXAMPLE/SD/g' /var/kerberos/krb5kdc/kdc.conf
-
 ###### Manipulando /etc/sshd ##########
 echo 'atualizando /etc/sshd'
 
